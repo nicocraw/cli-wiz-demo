@@ -41,6 +41,9 @@ jobs:
 
     - name: Download Wiz-cli
       run: curl -o wizcli https://wizcli.app.wiz.io/wizcli && chmod +x wizcli
+      
+    - name:  Set Environment
+      run:  export WIZ_ENV=demo
 
     - name: Authenticate to Wiz
       run: ./wizcli auth --id "$WIZ_CLIENT_ID" --secret "$WIZ_CLIENT_SECRET"
