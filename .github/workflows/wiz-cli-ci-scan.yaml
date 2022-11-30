@@ -41,10 +41,7 @@ jobs:
 
     - name: Download Wiz-cli
       run: curl -o wizcli https://wizcli.app.wiz.io/wizcli && chmod +x wizcli
-      
-    - name:  Set Environment
-      run:  export WIZ_ENV=demo
-
+          
     - name: Set demo environmental variable
       run: export WIZ_ENV=demo
       
